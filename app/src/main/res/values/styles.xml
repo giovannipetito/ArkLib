@@ -13,12 +13,12 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor">?attr/colorSecondaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:windowBackground">@drawable/arklib_background_dark_mode</item>
+        <item name="android:windowBackground">@drawable/background</item>
     </style>
 
-    <style name="ExportedButtonEmptyDarkMode" parent="android:Widget.Button">
-        <item name="android:background">@drawable/arklib_button_empty_dark_mode</item>
-        <item name="android:textColor">@color/button_empty_text_color_dark_mode</item>
+    <style name="ExportedButton" parent="android:Widget.Button">
+        <item name="android:background">@drawable/background_button</item>
+        <item name="android:textColor">@color/text_color_button</item>
         <item name="android:gravity">center</item>
         <item name="android:textSize">16sp</item>
         <item name="android:padding">12dp</item>
