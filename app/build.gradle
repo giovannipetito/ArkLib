@@ -17,33 +17,6 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    // Per esportare la cartella res nel file .aar (Se hai due cartelle res: res.srcDirs = ['src/main/res', 'src/main/{custom_res_folder}'])
-    /*
-    sourceSets {
-        main {
-            res.srcDirs = ['src/main/res'] // Oppure, se hai due cartelle res: res.srcDirs = ['src/main/res', 'src/main/{custom_res_folder}']
-        }
-    }
-    */
-    /*
-    sourceSets {
-        main.res.srcDirs = ['src/main/res']
-    }
-    */
-    /*
-    android.sourceSets {
-        main.res.srcDirs = ['src/main/res']
-    }
-    */
-
-    /*
-    sourceSets {
-        main {
-            java.srcDirs += ['src/main/res']
-        }
-    }
-    */
-
     buildTypes {
         release {
             minifyEnabled false
