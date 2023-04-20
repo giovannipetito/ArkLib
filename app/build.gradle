@@ -30,6 +30,13 @@ android {
     kotlinOptions {
         jvmTarget = '11'
     }
+
+    // Per esportare la cartella res nel file .aar
+    sourceSets {
+        main {
+            res.srcDirs = ['src/main/res'] // Oppure, se hai due cartelle res: res.srcDirs = ['src/main/res', 'src/main/{custom_res_folder}']
+        }
+    }
 }
 
 dependencies {
