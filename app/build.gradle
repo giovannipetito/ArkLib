@@ -31,11 +31,16 @@ android {
         jvmTarget = '11'
     }
 
-    // Per esportare la cartella res nel file .aar
+    // Per esportare la cartella res nel file .aar (Se hai due cartelle res: res.srcDirs = ['src/main/res', 'src/main/{custom_res_folder}'])
+    /*
     sourceSets {
         main {
             res.srcDirs = ['src/main/res'] // Oppure, se hai due cartelle res: res.srcDirs = ['src/main/res', 'src/main/{custom_res_folder}']
         }
+    }
+    */
+    sourceSets {
+        main.res.srcDirs = ['src/main/res']
     }
 }
 
